@@ -76,6 +76,8 @@ img {
   padding-bottom: 24px;
   display: flex;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container-header {
@@ -290,8 +292,12 @@ img {
   background: var(--nondescript-color);
 }
 
-.project-card:hover,
-.project-card:focus {
+.project-link {
+  display: block;
+}
+
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -377,6 +383,10 @@ img {
   color: var(--secondary-color);
 }
 
+.team-soc-icon {
+  fill: var(--minor-color);
+}
+
 .team-soc-link:hover,
 .team-soc-link:focus {
   background-color: var(--active-contact-color);
@@ -456,6 +466,7 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer {
@@ -492,11 +503,18 @@ img {
 .footer-soc-title {
   margin-bottom: 16px;
   color: var(--nondescript-color);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .footer-soc-list {
   display: flex;
   gap: 16px;
+}
+
+.footer-soc-icons {
+  fill: var(--minor-color);
 }
 
 .footer-soc-link:hover,
